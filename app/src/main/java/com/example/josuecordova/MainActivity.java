@@ -67,6 +67,10 @@ public class MainActivity extends AppCompatActivity {
                 if(!nombre.equals(""))
                     btResultados.setEnabled(true);
 
+                tvNombre.setText(nombre);
+                tvApellido.setText(apellido);
+                tvBase.setText(base);
+                tvExponente.setText(exponente);
             }
 
             if(resultCode == Activity.RESULT_CANCELED){
@@ -87,10 +91,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void MostrarResultados(View view){
-        tvNombre.setText(nombre);
-        tvApellido.setText(apellido);
-        tvBase.setText(base);
-        tvExponente.setText(exponente);
+
         tvFactorial.setText(String.valueOf(factorial(Integer.parseInt(numero))));
         tvPotencia.setText(String.valueOf(Potencia(Integer.parseInt(base), Integer.parseInt(exponente))));
     }
