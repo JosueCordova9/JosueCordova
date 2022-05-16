@@ -1,9 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activity2">
+    tools:context=".Activity2"
+    android:orientation="vertical">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="25px"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView_titulo_nombre2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Nombres: " />
+
+        <EditText
+            android:id="@+id/editText_nombre2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text=""
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="25px">
+
+        <TextView
+            android:id="@+id/textView_titulo_base2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Base: " />
+
+        <EditText
+            android:id="@+id/editText_base2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text=""
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_siguiente2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/button_siguiente"
+        android:layout_margin="45px"
+        android:onClick="AbrirActivity3"/>
+
+    <Button
+        android:id="@+id/button_cerrar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/button_cerrar"
+        android:layout_margin="45px"
+        android:onClick="CerrarActivity2"/>
+
+</LinearLayout>

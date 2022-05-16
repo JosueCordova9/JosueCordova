@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">JosueCordova</string>
+    <string name="titulo_nombres">Nombres: </string>
+    <string name="titulo_apellidos">Apellidos: </string>
+    <string name="titulo_base">Base: </string>
+    <string name="titulo_exponente">Exponente: </string>
+    <string name="titulo_factorial">Factorial: </string>
+    <string name="titulo_potencia">Potencia: </string>
+    <string name="button_siguiente">Siguiente</string>
+    <string name="button_resultados">Mostrar Resultados</string>
+    <string name="button_cerrar">Cerrar</string>
+    <string name="titulo_numero">Número</string>
+    <string name="vacio"> </string>
 </resources>
